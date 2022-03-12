@@ -39,8 +39,8 @@ def kruznica(x1, y1, R, xs, ys):
 
     #plot
     figure, axes = plt.subplots()
-    kružnica = plt.Circle((xs, ys), R, fill=False)
-    plt.gcf().gca().add_artist(kružnica)
+    kruznica = plt.Circle((xs, ys), R, fill=False)
+    plt.gcf().gca().add_artist(kruznica)
     axes.set_aspect(1)
     axes.set_xlim([-5,5])
     axes.set_ylim([-5,5])
