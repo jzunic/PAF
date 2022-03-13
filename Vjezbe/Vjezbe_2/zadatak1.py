@@ -17,7 +17,7 @@ el_p = 0
 
 for el in t:
     v_iduca = v_poc + a * (el - el_p)
-    x_iduci = x_poc + v_poc * (el - el_p) + 1/2 * a * (el - el_p)**2
+    x_iduci = x_poc + v_iduca * (el - el_p)
     el_p = el
     v_poc = v_iduca
     x_poc = x_iduci

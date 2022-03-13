@@ -16,7 +16,7 @@ v_x = v_0 * np.cos(50 * np.pi / 180)
 v_0_y = v_0 * np.sin(50 * np.pi / 180)
 for el in t:
     v_y = v_0_y + g * (el - t_poc)
-    y =  y_poc + v_0_y * (el - t_poc) + 1/2 * g * (el - t_poc)**2
+    y =  y_poc + v_y * (el - t_poc)
     x = x_poc + v_x * (el - t_poc)
     
     v_0_y = v_y

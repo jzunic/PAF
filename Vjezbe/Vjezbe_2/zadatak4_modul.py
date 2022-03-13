@@ -55,7 +55,7 @@ def kosi_hitac(pocetna_brzina, kut_izbacaja, vrijeme):
         t.append(dt * i)
 
         v_y = v_0_y + g * dt
-        y = y_poc + v_0_y * dt + 1/2 * g * dt**2
+        y = y_poc + v_y * dt
         x = x_poc + v_0_x * dt
 
         v_y_lista.append(v_y)

@@ -13,7 +13,7 @@ def jednoliko_gibanje(F, m, t):
 
     for el in t:
         v_iduca = v_poc + a * (el - el_p)
-        x_iduci = x_poc + v_poc * (el - el_p) + 1/2 * a * (el - el_p)**2
+        x_iduci = x_poc + v_iduca * (el - el_p)
         el_p = el
         v_poc = v_iduca
         x_poc = x_iduci
@@ -57,7 +57,7 @@ def kosi_hitac(poc_brzina, upadni_kut, t):
     v_0_y = poc_brzina * np.sin(upadni_kut * np.pi / 180)
     for el in t:
         v_y = v_0_y + g * (el - t_poc)
-        y =  y_poc + v_0_y * (el - t_poc) + 1/2 * g * (el - t_poc)**2
+        y =  y_poc + v_y * (el - t_poc)
         x = x_poc + v_x * (el - t_poc)
         
         v_0_y = v_y
