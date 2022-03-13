@@ -48,10 +48,9 @@ def kosi_hitac(pocetna_brzina, kut_izbacaja, vrijeme):
     t = []
     x_lista = []
     y_lista = []
-
+    v_x_lista.append(v_0_x)
+    v_y_lista.append(v_0_y)
     for i in range(int(vrijeme / dt)):
-        v_x_lista.append(v_0_x)
-        v_y_lista.append(v_0_y)
         t.append(dt * i)
 
         v_y = v_0_y + g * dt
@@ -65,7 +64,7 @@ def kosi_hitac(pocetna_brzina, kut_izbacaja, vrijeme):
         v_0_y = v_y
         y_poc = y
         x_poc = x
-
+     
     projektil_pao = False
 
     for i in range(int(vrijeme/dt)):
