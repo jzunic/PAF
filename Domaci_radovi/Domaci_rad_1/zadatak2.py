@@ -8,12 +8,12 @@ kut = []
 domet = []
 vrijeme =[]
 
-for i in range(0, 91):
+for i in linspace(0, 90, 1000):
     prt1.set_initial_conditions(10, i, 0, 0)
     kut.append(i)
     domet.append(prt1.range())
     vrijeme.append(prt1.total_time())
-print(vrijeme)
+
 plt.subplot(1, 2, 1)
 plt.xlabel("kut/stupnjevi")
 plt.ylabel("domet/m")
