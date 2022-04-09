@@ -6,8 +6,9 @@ using namespace std;
 
 void jednadzbaPravca(double x1, double y1, double x2, double y2)
 {
-    double k = (y1 - y2)/(x1 - x2);
-    double l = -k*x1 + y1;
+    double k, l;
+    k = (y1 - y2)/(x1 - x2);
+    l = -k*x1 + y1;
 
     string jednadzba = "Jednadzba pravca je " + to_string(k) + "x" + " + " + "(" + to_string(l) + ")";
 
